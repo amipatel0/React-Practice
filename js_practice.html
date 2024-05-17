@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Page</title>
+
+
+
+
+    <script src="script1.js">
+        function myFunction() {
+          document.getElementById("p1").innerHTML = "function called.";
+        }
+
+    </script>
+</head>
+<body>
+<h2>JavaScript Example </h2>
+ <p id="p1">JavaScript Language</p>
+
+<button type="button" onclick="myFunction()">Click to check function called</button>
+
+<h1>Using "write" display </h1>
+<script>
+document.write(8 + 26);
+</script>
+
+
+<h1>Using "alert" display </h1>
+<button id="alertButton" onclick="window.alert(7+ 26)">Check alert message</button>
+
+<script>
+    console.log(8 + 9);
+</script>
+
+<!--for basic-->
+
+<p id="pid1"></p>
+<p id="pid2"></p>
+<p id="pid3"></p>
+<p id="pid4"></p>
+<!--for string -->
+<p id="str1"></p>
+<p id="str2"></p>
+<p id="str3"></p>
+<p id="str4"></p>
+<p id="str5"></p>
+<p id="str6"></p>
+
+<!--for array-->
+<p id="str7"></p>
+<p id="str8"></p>
+<p id="str9"></p>
+<p id="str10"></p>
+<p id="str11"></p>
+<p id="str12"></p>
+<p id="str13"></p>
+<p id="str14"></p>
+<p id="str15"></p>
+<p id="str16"></p>
+<p id="str17"></p>
+<p id="str18"></p>
+<p id="str19"></p>
+<p id="str20"></p>
+
+<!--for arithmetic -->
+<p id="add"></p>
+<p id="sub"></p>
+<p id="mul"></p>
+<p id="div"></p>
+<p id="op"></p>
+<p id="greter"></p>
+
+<!-- for math function -->
+<p id="sqrt"></p>
+<p id="min"></p>
+<p id="log"></p>
+<p id="random"></p>
+<p id="round"></p>
+<p id="floor"></p>
+<p id="sign"></p>
+
+<!--for object-->
+<p id="person"></p>
+
+<!--for number methods-->
+<p id="n1"></p>
+<p id="n2"></p>
+<p id="n3"></p>
+<p id="n4"></p>
+
+
+<!--for date-->
+<p id="d1"></p>
+<p id="d2"></p>
+<p id="d3"></p>
+<p id="d4"></p>
+<p id="d5"></p>
+<p id="d6"></p>
+
+<!--foreach loop-->
+<p id="a1"></p>
+
+<!-- for looping-->
+<p id="loop"></p>
+<p id="in"></p>
+
+<!--for if else-->
+<p id="i1"></p>
+
+<!--for class-->
+<p id="c1"></p>
+<p id="c2"></p>
+<p id="c3"></p>
+<p id="c4"></p>
+<p id="c5"></p>
+
+<!--for arrow function-->
+<p id="arrow"></p>
+
+<!--for jason-->
+<p id="j1"></p>
+<p id="j2"></p>
+<p id="j3"></p>
+<p id="j4"></p>
+
+
+<!--for functions-->
+<p id="f1"></p>
+<p id="f2"></p>
+
+<!--for set methods-->
+<p id="s1"></p>
+<p id="s2"></p>
+<p id="s3"></p>
+
+
+
+
+
+<script>
+
+let a='Hello World';
+let b='This is first page.';
+let c='hii i am ami';
+const d = new Date();
+
+
+document.getElementById('pid1').innerHTML="<b>Length is:</b>"+a.length;
+document.getElementById('pid2').innerHTML="<b>1st index letter to 9th index letter:</b>"+b.slice(1,9);
+document.getElementById('pid3').innerHTML="<b> <u>c</u> variable datatype:</b>"+typeof c;
+document.getElementById('pid4').innerHTML="<b>Date using const variable : " +" "+"</b>"+d;
+
+//String functions
+
+ let s1='Hello.. I am ami'
+ let s2='hiii'
+ let s3="      How are you?"
+ let s4='I am a bca student'
+ 
+ document.getElementById('str1').innerHTML=s1.replace('ami','meshwa');
+ document.getElementById('str2').innerHTML="<b>Upper case:</b>"+s2.toUpperCase();
+ document.getElementById('str3').innerHTML="<b>Concat :</b>"+s2.concat(" "+s3);
+ document.getElementById('str4').innerHTML="<b>Trim:</b>"+s3.trim();
+ document.getElementById('str5').innerHTML="<b>Index:</b>"+s1.indexOf('l');
+ document.getElementById('str6').innerHTML="<b>character code in asciii value:</b>"+s4.charCodeAt(5);
+
+
+ //Array methods
+ const cars = ["Thar", "Audi", "BMW", "Eco"];
+ const cars2 = ["Alto", "XUV", "Scorpio"];
+ const cars3=["Verna","kia"];
+ const allcars=cars.concat(cars2,cars3);
+ let size=cars.length;
+ let car=cars.at(3);
+ let position=cars.indexOf('Audi') + 1;
+
+ document.getElementById('str7').innerHTML="<b>Using pop method:</b>"+cars.pop();
+ document.getElementById('str8').innerHTML="<b>Using unshift method:</b>"+cars.unshift('Eco');
+ document.getElementById('str9').innerHTML="<b>Before added car:</b>"+cars;
+ document.getElementById('str8').innerHTML="<b>Using push method:</b>"+cars.push('Enova');
+ document.getElementById('str11').innerHTML="<b>After added car:</b>"+cars;
+ document.getElementById('str12').innerHTML="<b>All Cars:</b>"+allcars;
+ document.getElementById('str13').innerHTML="<b>Length of array:</b>"+size;
+ document.getElementById('str14').innerHTML="<b>3rd index element:</b>"+car;
+ document.getElementById('str15').innerHTML="<b>Using join method:</b>"+cars.join("#");
+ document.getElementById('str16').innerHTML="<b>Sorted array :</b>"+cars.sort();
+ document.getElementById('str17').innerHTML="<b>Reverse array :</b>"+cars.reverse();
+ document.getElementById('str18').innerHTML="<b>Audi is found at position:</b>"+position;
+ document.getElementById('str19').innerHTML="<b>BMW car is present in array or not:</b>"+cars.includes('BMW');
+
+
+
+
+
+
+
+//Arithmetic
+let x = 8;
+let y = 26;
+var add = x + y;
+var sub=x-y;
+var mul=x*y;
+var div=x/y;
+
+var res= x > y;
+
+let z = 10;
+z += 5;
+
+document.getElementById('add').innerHTML ="<b>Addition:</b>"+ add;
+document.getElementById('sub').innerHTML ="<b>Subtraction:</b>"+ sub;
+document.getElementById('mul').innerHTML ="<b>Multiplication:</b>"+ mul;
+document.getElementById('div').innerHTML ="<b>Division:</b>"+ div;
+document.getElementById('op').innerHTML="<b>+= Operator:</b>"+z;
+document.getElementById('greter').innerHTML="<b>Greter than value:</b>"+res;
+
+
+//Math
+document.getElementById('min').innerHTML = "<b>Minimum:</b>"+Math.min(26, 19,23,15,7,8,11);
+document.getElementById('log').innerHTML = "<b>Log of 5 is:</b>"+Math.log(5);
+document.getElementById('sqrt').innerHTML ="<b>Square is:</b>"+ Math.sqrt(9);
+document.getElementById('random').innerHTML ="<b>Random number:</b>"+ Math.random();
+document.getElementById('round').innerHTML ="<b>Round method:</b>"+ Math.round(26.7);
+document.getElementById('floor').innerHTML ="<b>Floor method:</b>"+ Math.floor(26.7);
+document.getElementById('sign').innerHTML ="<b>Sign method:</b>"+ Math.sign(-26);
+
+
+
+
+
+
+//object
+const person = {firstName: "Ami",lastName: "Patel",age: 20};
+
+document.getElementById("person").innerHTML ="<b>Using <u>object</u>:</b>"+person.firstName + " is " + person.age + " years old.";
+
+//number methods
+
+let n=26.715;
+
+document.getElementById('n1').innerHTML="<b>Using <u>toPrecision</u> method:</b>"+  n.toPrecision() + "<br>" +
+  n.toPrecision(2)+ "<br>" +
+  n.toPrecision(4) + "<br>" +
+  n.toPrecision(6); 
+
+document.getElementById('n2').innerHTML="<b>Using <u>toFixed</u> method:</b>"+n.toFixed(0)+"<br>"+
+n.toFixed(2)+"<br>"+
+n.toFixed(4)+"<br>"+
+n.toFixed(6);
+
+document.getElementById('n3').innerHTML="<b>Using <u>toExponential</u> method:</b>"+
+n.toExponential(2)+"<br>"+
+n.toExponential(4)+"<br>"+
+n.toExponential(6);
+
+let n1=15
+document.getElementById('n4').innerHTML="<b>Using <u>toString</u> method:</b>"+
+n1.toString()+"<br>"+
+(15).toString()+"<br>"+
+(100 + 15).toString();
+
+
+//Dates
+const d1=new Date(2020, 6, 26, 10, 33, 30, 0);
+const date=new Date(); 
+const d2=new Date("2002");
+        
+        document.getElementById('d1').innerHTML="<b>Full Date:</b>"+date;
+        document.getElementById('d2').innerHTML="<b>year of date:</b>"+date.getFullYear();
+        document.getElementById("d3").innerHTML = d.getMonth() + 1;
+        document.getElementById('d4').innerHTML="<b>Hours of Date:</b>"+date.getHours();
+        document.getElementById('d5').innerHTML="<b>Minutes of Date:</b>"+date.getMinutes();
+        document.getElementById('d6').innerHTML="<b>Seconds of Date:</b>"+date.getSeconds();
+
+
+
+// if-else
+const t = 11;
+let g;
+if (t >10) {
+  g= "First";
+} else if (t < 10) {
+  g= "Second";
+} else {
+  g= "Third";
+}
+document.getElementById("i1").innerHTML ="<b>Using <u>If-else</u> condition :</b>"+ g;
+
+
+
+//foreach
+
+const numbers = [26, 7, 19, 15, 8];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("a1").innerHTML = "<b><u>Foreach</u> loop elements:</b>"+txt;
+
+function myFunction(value, index, array) {
+  txt += value + "<br>"; 
+}
+
+//Loop
+
+let i, len, text;
+for (i = 0, len = cars.length, text = ""; i < len; i++) {
+text += cars[i] + "<br>";
+}
+document.getElementById("loop").innerHTML = "<b>Using <u>for</u> loop:</b>"+text;
+
+ 
+//for in loop
+const fruits = {name:'Apple',price:'100',quantity:'2'};
+let line = " ";
+        for (let i in fruits)
+        {
+            line += fruits[i]+"<br>";
+        }
+
+        document.getElementById('in').innerHTML="<b>Using <u>for in</u>:</b>" +line;
+
+
+
+//class and class methods
+class Student {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+
+
+  age() {
+    const date1 = new Date();
+    return date1.getFullYear() - this.year;
+  }
+
+}
+
+const myname1 = new Student("Ami", 2003);
+const myname2 = new Student("Avni", 2005);
+
+document.getElementById("c1").innerHTML ="<b>Using <u>Class</u> :<br>Name:</b>"+myname1.name+" "+"<b>Year:</b>"+myname1.year + "<br> " +"<b>Name:</b>"+ myname2.name+" "+"<b>Year:</b>"+myname2.year;
+document.getElementById("c2").innerHTML ="<b>Using <u>Class Method</u> :</b><br>Ami is " + myname1.age() + " years old.</b>";
+
+//class getter and setter methods
+
+class Student1 {
+  constructor(name) {
+    this.name = name;
+  
+  }
+  set sname(a){
+    this.name=a;
+  }
+
+  get sname(){
+    return this.name;
+  }
+}
+
+const myname = new Student1("Ami");
+document.getElementById("c3").innerHTML="<b>Using <u>Getter and Setter</u> method:</b>"+myname.sname;
+
+//class inheritance
+class Student2 {
+  constructor(name) {
+    this.name = name;
+  }
+  present(){
+    return "<b>Using <u>Class inheritance</u> :</b><br>I am "+this.name;
+  }
+}
+class Age extends Student2{
+  constructor(name,age){
+    super(name);
+    this.model=age;
+  }
+  display(){
+    return this.present()+", "+this.model+" years old.";
+  }
+}
+let myName=new Age("Ami",21);
+document.getElementById("c4").innerHTML=myName.display();
+
+
+
+//class static
+class Student3 {
+  constructor(name) {
+    this.name = name;
+  }
+
+  static hii(){
+    return "hiii";
+  }
+}
+const name=new Student2("Ami");
+document.getElementById("c5").innerHTML="<b>Using <u>Static</u> :</b><br>"+Student3.hii();
+
+
+//arrow function
+
+let p = (a, b) => a + b;
+document.getElementById("arrow").innerHTML ="<b>Using <u>Arrow function</u> :</b>"+ p(26, 8);
+
+
+//jason to object
+const s = '{"name":"Ami", "age":20, "city":"Vadthal"}'
+const obj = JSON.parse(s);
+document.getElementById("j1").innerHTML = "<b>Using <u>Jason to Object</u> :</b>"+obj.name + ", " + obj.age;
+
+//array as jason
+const shapes = '[ "Triangle", "Rectangle", "Square" ]';
+const myArr = JSON.parse(shapes);
+document.getElementById("j2").innerHTML = "<b>Using <u>array as jason</u> :</b>"+myArr[2];
+
+
+//function call
+
+const DOB = {
+  fullDate: function() {
+    return this.Date + " " + this.Month+" "+this.Year;
+  }
+}
+const Ami = {
+  Date:"08",
+  Month:"November",
+  Year:"2003"
+  
+}
+document.getElementById("f1").innerHTML ="<b>Using <u>Function call</u> :</b>"+DOB.fullDate.call(Ami);
+
+//set methods
+
+const letters = new Set(["a","b","c"]);
+
+letters.add("d");
+letters.add("e");
+document.getElementById("s1").innerHTML = "<b>Using <u>set</u> Method:</b>The set has " + letters.size + " values.";
+
+answer = letters.has("d");
+document.getElementById("s2").innerHTML = "<b>Using <u>has</u> method:</b>The answer is " + answer;
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

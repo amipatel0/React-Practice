@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Center Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .container {
+            padding-bottom: 10px; 
+            margin-top: 15px;
+            text-align: center;
+            margin-right: 30px;
+        }
+        .docs h1{
+            text-align: center;
+            color: black;
+            margin-top: 10px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .news h1{
+            text-align: center;
+            color:black;
+            margin-top: 10px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .contact h1{
+            text-align: center;
+            color: black;
+            margin-top: 10px;
+            font-style: italic;
+            font-weight: bold;
+            
+        }
+        
+
+        .description {
+            text-align: center;
+            font-weight: bold;
+            
+        }
+
+        .image-container{
+            text-align: center;
+            margin-top: 10px; 
+            
+
+        }
+        .image-container img {
+            border-radius: 10px; 
+        }
+        .col-md-12 img{
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            background-color: #333; 
+
+        }
+        .col-md-4 h2{
+            font-weight: bold;
+        }
+        .card-body p + * {
+            border-top: 1px solid #dee2e6; 
+            padding-top: 5px; 
+        }
+        .modal-content{
+          background-image: linear-gradient(rgb(174, 0, 255), rgb(0, 195, 255));
+        }
+  </style>
+</head>
+<body>
+
+
+    <nav class="navbar bg-body-tertiary" aria-label="larger">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <img src="images/health.png" alt="Logo" width="90" height="70" class="d-inline-block align-text-top">
+            Health Center
+          </a>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#home">Home</a></li>
+              <li><a class="dropdown-item" href="#doctors">Doctors</a></li>
+              <li><a class="dropdown-item" href="#news">News</a></li>
+              <li><a class="dropdown-item" href="#contact">Contact</a></li>
+
+            </ul>
+            <button type="button" class="btn btn-warning ms-2">
+              Notifications <span class="badge text-bg-danger">4</span>
+          </button>
+          </div>
+        </div>
+        
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary " aria-label="label">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" href="#doctors">Doctors</a>
+              <a class="nav-link" href="#news">News</a>
+              <a class="nav-link" href="#contact">Contact</a>
+              <a href="login.html" class="btn btn-success "  aria-disabled="true" onKeyPress="handleKeyPress(event)" onKeyDown="handleKeyDown(event)" onKeyUp="handleKeyUp(event)">Login </a>
+              
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                <div class="modal-dialog" >
+                  <div class="modal-content" >
+                     <div class="modal-header" >
+                           <h1 class="modal-title fs-5" id="exampleModalLabel" style="text-align: center; font-weight: bold; color:aliceblue">Sign Up</h1>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+                      </div>
+                    <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <i class="bi bi-person-circle"></i>
+                        <label for="username" class="form-label" style="font-weight: bold;">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                    </div>
+                    <div class="mb-3">
+                      <i class="bi bi-lock"></i>
+                          <label for="password" class="form-label" style="font-weight: bold;">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                      </div>
+                   <div class="mb-3">
+                    <i class="bi bi-envelope"></i>
+                        <label for="email" class="form-label" style="font-weight: bold;">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
+                    </div>
+                  
+                  </form>
+                  </div>
+                  <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary">Sign Up</button>
+                  </div>
+                    </div>
+                  </div>
+                 </div>
+
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!--image swapping-->
+
+    <div id="home" class="carousel slide mt-3" >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/health/h1.jpg" class="d-block w-40" alt="..." height="300" width="1350">
+          </div>
+          <div class="carousel-item">
+            <img src="images/health/h2.jpg" class="d-block w-40" alt="..." height="300" width="1350">
+          </div>
+          <div class="carousel-item">
+            <img src="images/health/h3.jpg" class="d-block w-40" alt="..." height="300" width="1350">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+<!-- doctors details-->
+      <div class="docs ">
+        <h1>Our Doctors</h1>
+      </div>
+
+
+
+    <div class="container " id="doctors">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <img src="images/health/d1.jpg" class="card-img-top" alt="d1">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight:bold;" >Nate Baston</h5>
+                <p>General Principal</p>
+                <h6>010-020-0120</h6>
+                <h6>general@company.com</h6>
+              </div>
+            </div>
+          </div>
+      
+         
+          <div class="col-md-3">
+            <div class="card">
+              <img src="images/health/d2.jpg" class="card-img-top" alt="d2">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight:bold;">Jason Stewart</h5>
+                <p>Cardiology</p>
+                <h6>010-040-0140</h6>
+                <h6>cardiology@company.com</h6>
+
+             </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <img src="images/health/d3.jpg" class="card-img-top" alt="d3">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight:bold;">Misha Nakahara</h5>
+                <p>Pregnancy</p>
+                <h6>010-070-0170</h6>
+                <h6>pregnacy@company.com</h6>
+
+             </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+
+      <!--news details-->
+
+      <div class="news ">
+        <h1>Latest News</h1>
+    </div>
+
+
+
+     <div class="container" id="news">
+        <div class="card"  style="background-color: aquamarine;">
+          <div class="card-body">
+            <div class="row ">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="images/health/n1.jpg" class="card-img-top" width="200" height="200" alt="n1">
+                  <div class="card-body">
+                    <h6>March 08,2013</h6>
+                    <h3 class="card-title" style="font-weight: bold;">About Amazing Technology</h3>
+                    <h6><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maxime aliquid impedit enim ullam. Dicta neque architecto dolorem iure repellat voluptatem error quo sed labore enim, earum dignissimos fugit! Perferendis?</p></h6>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="images/health/n2.jpg" class="card-img-top" width="200" height="200" alt="n2">
+                  <div class="card-body">
+                    <h6>February 09,2018</h6>
+                    <h3 class="card-title" style="font-weight: bold;">Introducing a new healing process</h3>
+                    <h6><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo id perferendis doloremque amet deserunt quisquam, nobis ullam totam quaerat eaque soluta similique vero quas architecto dolores eos quae hic nam.</p></h6>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="images/health/n3.jpg" class="card-img-top" width="200" height="200"alt="n3">
+                  <div class="card-body">
+                    <h6>January 27,2020</h6>
+                    <h3 class="card-title" style="font-weight: bold;">Review Annual Medical Research</h3>
+                    <h6><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nostrum et id distinctio, rerum corporis. Esse, voluptates reprehenderit, ipsam, praesentium sequi atque tempora nisi harum fuga minima maxime error quo.</p></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!--contact details-->
+    <div class="contact " id="contact">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div class="container" id="news">
+        <div class="card"  style="background-color: rgb(221, 167, 200);">
+          <div class="card-body">
+            <div class="row ">
+              <div class="col-md-4">
+                <div class="card">
+                    <h2>Contact Info</h2>
+                  <div class="card-body">
+                    <h6><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maxime aliquid impedit enim ullam. Dicta neque architecto dolorem iure repellat voluptatem error quo sed labore enim, earum dignissimos fugit! Perferendis?</p></h6>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h2>News</h2>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <img src="images/health/n1.jpg" class="card-img-top" alt="n1">
+                      </div>
+                      <div class="col-md-12">
+                        <h6 class="card-title" style="font-weight: bold;">About Amazing Technology</h6>
+                        <h6>March 08, 2013</h6>
+                      </div>
+
+
+
+                      <div class="col-md-12">
+                        <img src="images/health/n2.jpg" class="card-img-top" alt="n1">
+                      </div>
+                      <div class="col-md-12">
+                        <h6 class="card-title" style="font-weight: bold;">Introducing a new healing process</h6>
+                        <h6>February 09,2018</h6>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+             
+                 <div class="col-md-4">
+                <div class="card">
+                    <h2>Opening Hours</h2>
+                  <div class="card-body">
+                    <h6><p>Monday-Friday   08:00 AM - 10:00 PM</p></h6>
+                    <h6><p>Saturday 09:00 AM - 08:00 PM</p></h6>
+                    <h6><p>Sunday Closed</p></h6>
+
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-instagram"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+     <!--footer-->
+     <footer class="bg-success text-light py-4 mt-5">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-3">
+                  <h5 style="color: black;"><b><i>Location</i></b></h5>
+                  <p>112 Main St, Surat, Gujarat</p>
+                  <i class="fas fa-map-marker-alt"></i> 
+              </div>
+              <div class="col-md-3">
+                  <h5 style="color: black;"><b><i>Contact</i></b></h5>
+                  <p>Email: example@example.com</p>
+                  <p>Phone: +1234567890</p>
+                  <i class="fas fa-envelope"></i> <i class="fas fa-phone"></i>
+              </div>
+              <div class="col-md-3">
+                  <h5 style="color: black;"><b><i>Social Media</i></b></h5>
+                  <p>Follow us:</p>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
+  
+              </div>
+              <div class="col-md-3">
+                <h5 style="color: black;"><b><i>Links</i></b></h5>
+                <a href="#home" style="color:antiquewhite">Home</a>
+                <a href="#doctors" style="color:antiquewhite">Doctors</a>
+                <a href="#news" style="color:antiquewhite">News</a>
+                <a href="#contact" style="color:antiquewhite">Contact</a>
+            </div>
+
+          </div>
+      </div>
+  </footer>
+  
+
+
+      
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
