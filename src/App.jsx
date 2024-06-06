@@ -1,38 +1,78 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Counter from './components/Counter'
-import EventBinding from './components/EventBinding'
-import FunctionProps from './components/FunctionProps'
-import ClassProps from './components/ClassProps'
-import OnClick from './components/OnClick'
-import ParentComponent from './components/ParentComponent'
-import ConditionalRendering from './components/ConditionalRendering'
-import List from './components/List'
+import React from 'react';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+import CounterClick from './components/CounterClick';
+import CounterHover from './components/CounterHover';
+import User1 from './components/User1';
+import Counter1 from './components/Counter1';
+import CounterClick1 from './components/CounterClick1';
+import CounterHover1 from './components/CounterHover1';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-     <Counter/>
-      <EventBinding/>
-      <FunctionProps name="Ami" sem="6"/>
-      <FunctionProps name="Avni" sem="4"/>
+        <h1><u> <b><i>Concept of Rendering Component</i></b></u></h1><br></br>
+        <User1 name={(isLoggedIn)=>isLoggedIn ? 'Ami' : 'Avni'}/>
+        <Counter1 render={(count,incrCount)=><CounterClick1 count={count} incrCount={incrCount}></CounterClick1>}/>
+        <Counter1 render={(count,incrCount)=><CounterHover1 count={count} incrCount={incrCount}></CounterHover1>}/>
+    
+        {/* <Counter1>
+          {
+            (count,incrCount)=><CounterClick1 count={count} incrCount={incrCount}></CounterClick1>
+          }
+        </Counter1> */}
+        
 
-     <ClassProps name="Meshwa" sem="5"/>
-     <OnClick/>
+
+
+
+
+
+
+
+       {/* <h1><u> <b><i>Concept of Higher Order Component (HOC)</i></b></u></h1><br></br>
+       <CounterClick name="Ami"/>
+       <CounterHover sem="six" rno="32"/> */}
+
+
+
+
+   {/* <ContainerMouse/> */}
+
+    {/* <DataFetchingWithClick/> */}
+    {/* <DataFetchingWithId/> */}
+{/* <DataFetchingThirdPartyAPI/> */}
+    {/* <ClassIntervalCounter/>
+    <HookIntervalCounter/> */}
+
+    {/* <MouseEventClass/>
+    <MouseEventHooks/> */}
+
+   {/* Using Class: <ClassCounter/>
+   Using Hook: <CounterHook/> */}
+    {/* <HookWithMap/> */}
+{/* <NamesHook/> */}
+  {/* Using class:<CounterClass/> */}
+
+  {/* <HookCounter/> */}
+ {/* <PortalNormal/> */}
+ {/* <Portal/> */}
+
+ {/* <ErrorBoundaryDemo>
+         <Fruit fruitName="Tomato"/>
+
+      </ErrorBoundaryDemo>
+     <ErrorBoundaryDemo>
+               <Fruit fruitName="Kiwi"/>
+
+     </ErrorBoundaryDemo> */}
      
 
-     <ParentComponent />
-     <ConditionalRendering/>
-
-     <List/>
-
-
-    </>
-  )
+    {/* <ParentComp/> */}
+        </> 
+  );
 }
 
-export default App
+export default App;
