@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import "bootstrap/dist/css/bootstrap.css";
 // import "bootstrap/dist/js/bootstrap.js";
 
@@ -14,11 +16,28 @@ import History from './Example/History';
 import Login from './Example/Login';
 import Signup from './Example/Signup';
 
+import Book from './Example/Book';
+import Form from './Example/Form';
+
+import CardInfo from './Example/CardInfo';
+import RefsDemo from './Example/RefsDemo';
+import FocusInput from './Example/FocusInput';
+import FRParentInput from './Example/FRParentInput';
+
 function App() {
   return (
 <div className="App">
-<File3/>
+  <FRParentInput/>
+{/* <FocusInput/> */}
+  {/* <RefsDemo/> */}
+  {/* <CardInfo/> */}
 
+{/* <Login/>
+<Signup/> */}
+  
+  {/* <Form/> */}
+
+{/* <File3/> */}
  </div>
 
   );

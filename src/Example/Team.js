@@ -5,7 +5,7 @@ function Team() {
     <div>
       {/*team*/}
    <div class="team ">
-        <h1>Our Team</h1>
+        <h1><span>T</span>eam</h1>
       </div>
 
 

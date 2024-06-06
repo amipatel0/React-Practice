@@ -6,6 +6,8 @@ import Offer from './Offer'
 import Services from './Services'
 import Team from './Team'
 import Footer from './Footer'
+import Book from './Book'
+
 
 function File3() {
   return (
@@ -16,6 +18,7 @@ function File3() {
       <Offer/>
       <Services/>
       <Team/>
+      <Book/>
       <Footer/>
      
       

@@ -1,0 +1,62 @@
+.w-100{
+    height: 80vh;
+}
+.team h1 span{
+    color:#0099ff;
+
+}
+.team h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.services h1 span{
+    color: #0099ff;
+}
+.services h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.heading h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.heading h1 span{
+    color:#0099ff;
+
+}
+.book .card{
+        border-radius: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow:0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    box-shadow:0px 5px 5px -6px black;
+    height: 200px;
+
+}
+.book .btn{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+
+}

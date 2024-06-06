@@ -1,15 +1,16 @@
 import React from 'react'
+import './Page.css'
 
 function Services() {
   return (
     <div>
        {/*services*/}
-    <div class="team ">
-        <h1>Services</h1>
+    <div class="services">
+        <h1><span>S</span>ervices</h1>
       </div>
 
     <div class="container-services" id="services" >
-        <div class="card mt-5" style={{backgroundColor: '#333'}} >
+        <div class="card mt-3" style={{backgroundColor: '#333'}} >
           <div class="card-body">
             <div class="row ">
               <div class="col-md-4">

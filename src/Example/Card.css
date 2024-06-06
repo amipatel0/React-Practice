@@ -1,0 +1,39 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    max-width: 300px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:rgb(211, 211, 231);
+  }
+  
+  .pimage {
+    max-width: 100%;
+    width:100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  .pname {
+    font-size: 1.5em;
+    margin: 16px 0;
+    font-weight:bold;
+    color: #0f0f0f;
+
+  }
+  
+  .pprice {
+    font-size: 1.2em;
+    color: #0f0f0f;
+    margin: 8px 0;
+    font-weight:bold;
+  }
+  
+  .pdescription {
+    font-size: 1em;
+    color: #0f0f0f;
+    font-weight:bold;
+  }
+  

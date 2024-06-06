@@ -43,6 +43,8 @@
     border-radius: 40px;
     font-size: 16px;
     color: #fff;
+    font-weight:bold;
+    font-style:italic;
     padding: 20px 45px 20px 20px;
 }
 .input-container input ::placeholder{
