@@ -9,15 +9,19 @@ import User1 from './components/User1';
 import Counter1 from './components/Counter1';
 import CounterClick1 from './components/CounterClick1';
 import CounterHover1 from './components/CounterHover1';
+import ListAlbum from './components/ListAlbum';
+import AlbumForm from './components/AlbumForm';
 
 function App() {
   return (
     <>
-        <h1><u> <b><i>Concept of Rendering Component</i></b></u></h1><br></br>
+<AlbumForm/>
+    {/* <ListAlbum/> */}
+        {/* <h1><u> <b><i>Concept of Rendering Component</i></b></u></h1><br></br>
         <User1 name={(isLoggedIn)=>isLoggedIn ? 'Ami' : 'Avni'}/>
         <Counter1 render={(count,incrCount)=><CounterClick1 count={count} incrCount={incrCount}></CounterClick1>}/>
         <Counter1 render={(count,incrCount)=><CounterHover1 count={count} incrCount={incrCount}></CounterHover1>}/>
-    
+     */}
         {/* <Counter1>
           {
             (count,incrCount)=><CounterClick1 count={count} incrCount={incrCount}></CounterClick1>
