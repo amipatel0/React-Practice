@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -11,11 +11,26 @@ import CounterClick1 from './components/CounterClick1';
 import CounterHover1 from './components/CounterHover1';
 import ListAlbum from './components/ListAlbum';
 import AlbumForm from './components/AlbumForm';
+import { UserProvider } from './userContext';
+import ComponentP from './ComponentP';
+import ContextTheme from './components/ContextTheme';
+import ComponentTheme from './components/ComponentTheme';
 
 function App() {
+
+  const [theme,setTheme]=useState('light');
   return (
     <>
-<AlbumForm/>
+
+
+    <ContextTheme.Provider value={{theme,setTheme}}>
+      <ComponentTheme/>
+    </ContextTheme.Provider>
+{/* <UserProvider value="Ami">
+  <ComponentP/>
+</UserProvider> */}
+
+{/* <AlbumForm/> */}
     {/* <ListAlbum/> */}
         {/* <h1><u> <b><i>Concept of Rendering Component</i></b></u></h1><br></br>
         <User1 name={(isLoggedIn)=>isLoggedIn ? 'Ami' : 'Avni'}/>
