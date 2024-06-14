@@ -15,17 +15,26 @@ import { UserProvider } from './userContext';
 import ComponentP from './ComponentP';
 import ContextTheme from './components/ContextTheme';
 import ComponentTheme from './components/ComponentTheme';
+import ContextAuth from './UserContext/ContextAuth';
+import Header from './UserContext/Header';
+import Profile from './UserContext/Profile';
+import { AuthProvider } from './UserContext/ContextAuth';
 
 function App() {
 
-  const [theme,setTheme]=useState('light');
+ // const [theme,setTheme]=useState('light');
   return (
     <>
+   <AuthProvider>
+    <Header/>
+    <Profile/>
+   </AuthProvider>
 
-
-    <ContextTheme.Provider value={{theme,setTheme}}>
+    {/* <ContextTheme.Provider value={{theme,setTheme}}>
       <ComponentTheme/>
-    </ContextTheme.Provider>
+    </ContextTheme.Provider> */}
+
+
 {/* <UserProvider value="Ami">
   <ComponentP/>
 </UserProvider> */}

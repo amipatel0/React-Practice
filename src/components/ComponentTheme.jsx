@@ -12,7 +12,7 @@ const ComponentTheme=()=>{
     };
     return(
         
-            <div style={{background: theme === 'light' ? '#fff' : '#333',color: theme === 'light' ? '#000' : '#fff',padding:'30px'}}>
+            <div style={{background: theme === 'light' ? 'yellow' : 'blue',color: theme === 'light' ? 'blue' : 'yellow',padding:'30px'}}>
             <p>The Current Theme is {theme}</p>
             <button onClick={themeToggle}>Toggle Theme</button>
             </div>
