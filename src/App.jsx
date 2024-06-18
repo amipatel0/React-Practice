@@ -3,32 +3,32 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-import CounterClick from './components/CounterClick';
-import CounterHover from './components/CounterHover';
-import User1 from './components/User1';
-import Counter1 from './components/Counter1';
-import CounterClick1 from './components/CounterClick1';
-import CounterHover1 from './components/CounterHover1';
-import ListAlbum from './components/ListAlbum';
-import AlbumForm from './components/AlbumForm';
-import { UserProvider } from './userContext';
-import ComponentP from './ComponentP';
-import ContextTheme from './components/ContextTheme';
-import ComponentTheme from './components/ComponentTheme';
-import ContextAuth from './UserContext/ContextAuth';
-import Header from './UserContext/Header';
-import Profile from './UserContext/Profile';
-import { AuthProvider } from './UserContext/ContextAuth';
+import ComponentPreviousValue from './components/ComponentPreviousValue';
+import DebouncedInputComponent from './components/DebouncedInputComponent';
+import ExpensiveComputationComponent from './components/ExpensiveComputationComponent';
+
 
 function App() {
 
- // const [theme,setTheme]=useState('light');
+// const [theme,setTheme]=useState('light');
   return (
     <>
-   <AuthProvider>
+
+
+    <ExpensiveComputationComponent/>
+
+    {/* <CounterComponent/> */}
+    {/* <ComponentPreviousValue/> */}
+    {/* <DebouncedInputComponent/> */}
+
+   {/* <ComponentExample2/> */}
+    {/* <ComponentExample1/> */}
+   {/* <ComponentExample/> */}
+
+   {/* <AuthProvider>
     <Header/>
     <Profile/>
-   </AuthProvider>
+   </AuthProvider> */}
 
     {/* <ContextTheme.Provider value={{theme,setTheme}}>
       <ComponentTheme/>
@@ -104,3 +104,6 @@ function App() {
 }
 
 export default App;
+
+
+

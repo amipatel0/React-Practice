@@ -15,7 +15,7 @@ const Header = () => {
           <button onClick={logout}>Logout</button>
         </div>
       ) : (
-        <button onClick={() => login('Ami','1108','abc@gmail.com')}>Login</button>
+        <button onClick={() => login('Ami','abc@gmail.com','1234567890')}>Login</button>
       )}
     </header>
   );

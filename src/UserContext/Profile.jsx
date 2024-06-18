@@ -7,20 +7,27 @@ const Profile = () => {
 
   return (
     <div className="profile-main">
-      <div className="profile-container">
-        {user ? (
-          <div>
-            <h2>Profile</h2>
-            <p>Username: {user.username}</p>
-            <p>Password:{user.password}</p>
-            <p>Email ID:{user.email}</p>
+    <div className="profile-container">
+      {user ? (
+        <div className="profile-content">
+          <div className="profile-image">
+            <img src='/images/profile.jpeg' alt='Profile Image'/>
           </div>
-        ) : (
-          <p className="login-message">Please log in to see your profile.</p>
-        )}
-      </div>
+          <div className="profile-info">
+            <h2><b><u>Profile</u></b></h2>
+            <p><b><i>Username:</i></b> {user.username}</p>
+            <p><b><i>Email ID:</i></b> {user.email}</p>
+            <p><b><i>Contact Number:</i></b> {user.cno}</p>
+          </div>
+        </div>
+      ) : (
+        <p className="login-message">
+          Please log in to see Profile.
+        </p>
+      )}
     </div>
-  );
+  </div>
+   );
 };
 
 export default Profile;
